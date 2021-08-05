@@ -1,0 +1,128 @@
+.services-heading {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #2b00d4;
+  font-size: 52px;
+  line-height: 64px;
+  font-weight: 300;
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,
+      0deg);
+  transform-style: preserve-3d;
+}
+
+.ourservices {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.services-sub-heading {
+  position: relative;
+  z-index: 1;
+  display: none;
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 74px;
+  color: #0f0928;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,
+      0deg);
+  opacity: 1;
+  transform-style: preserve-3d;
+}
+.s{
+  display: block;
+}
+.services-para.p{
+  display: block;
+}
+.services-para {
+  max-width: 550px;
+
+  margin-top: 40px;
+  margin-bottom: 0;
+      color: #665f82;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,
+      0deg);
+  transform-style: preserve-3d;
+  opacity: 1;
+  display: none;
+}
+.back-image{
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin-top: 90px;
+  background-attachment: fixed;
+}
+.servicebox{
+  margin-top: 90px;
+}
+.text{
+  display:flex;
+  margin-bottom: 20px;
+}
+.text-title{
+  margin-right: 25px;
+}
+.text-number{
+  color: rgb(255, 255, 255);
+  background-color: rgb(58, 40, 220);
+padding: 4px 13px;
+height: 41px;
+
+}
+.text-para{
+
+color:  rgb(114, 110, 132);
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+.move-up {
+
+  animation-name: fadeInRight;
+  animation-fill-mode: both;
+  animation-duration: 0.2s;
+
+  animation-delay: 0.5s;
+}
+/* .move-up{
+  transform: translateY(0px);
+  opacity:1;
+} */
+.services{
+
+  padding: 30px;
+  color: #000000;
+}
+.hover-btn-layer{
+  position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+  background-color: rgba(43,0,212,.1);
+ overflow: hidden;
+ width: 0;
+ height: 100%;
+ transition: .5s ease;
+}
+.services:hover .hover-btn-layer{
+    width: 100%;
+}
+.services.active{
+  background-color: #2b00d4;
+  color: #ffffff;
+}
